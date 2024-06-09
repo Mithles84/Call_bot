@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cold Calling Bot</title>
+</head>
+<body>
+    <h1>Businesses</h1>
+    <ul>
+    {% for business in businesses %}
+        <li>{{ business.name }} - {{ business.contact_person }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

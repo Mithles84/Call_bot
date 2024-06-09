@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cold Calling Prediction</title>
+</head>
+<body>
+    <h1>Prediction</h1>
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="text" placeholder="Enter text to predict"></textarea>
+        <button type="submit">Predict</button>
+    </form>
+    {% if prediction %}
+    <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
